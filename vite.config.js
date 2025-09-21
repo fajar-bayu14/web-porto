@@ -14,5 +14,5 @@ export default defineConfig({
       svgo: false, // skip SVG kalau ga perlu
     }),
   ],
-  base: process.env.VITE_BASE_PATH || "/web-porto"
+  // base: process.env.VITE_BASE_PATH || "/"
 })

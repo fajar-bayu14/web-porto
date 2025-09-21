@@ -11,7 +11,7 @@ const Hero = () => {
     return (
         <div className='md:flex'>
             <div className='flex flex-col md:max-w-100 max-w-screen mb-5 border-2 rounded-xl p-3 m-4' data-aos="fade-right">
-                <img src="avatar.png" alt="" className='w-full rounded-xl' loading="lazy" />
+                <img src="avatar.webp" alt="avatar" className='w-full rounded-xl'/>
                 <h2 className='text-5xl font-bold text-[#393E46] w-[350px]'>Fajar Bayu Timur</h2>
                 <div className='bg-[#393E46] py-1 w-[50px] mb-3'></div>
 

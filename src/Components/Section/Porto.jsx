@@ -9,10 +9,10 @@ const Porto = () => {
             <div
                 id="porto"
                 className="flex gap-3 overflow-x-auto flex-nowrap scrollbar-hide rounded-xl">
-                <img src="/porto/porto-1.webp" alt="porto-1" loading='lazy' className="md:w-1/2 w-full rounded-lg flex-shrink-0" />
-                <img src="/porto/porto-2.webp" alt="porto-2" loading='lazy' className="md:w-1/2 w-full rounded-lg flex-shrink-0" />
-                <img src="/porto/porto-3.webp" alt="porto-3" loading='lazy' className="md:w-1/2 w-full rounded-lg flex-shrink-0" />
-                <img src="/porto/porto-4.webp" alt="porto-4" loading='lazy' className="md:w-1/2 w-full rounded-lg flex-shrink-0" />
+                <img src="/porto/porto-1.webp" alt="porto-1" loading='lazy' className="md:w-1/2 w-full rounded-lg flex-shrink-0" fetchpriority="high"/>
+                <img src="/porto/porto-2.webp" alt="porto-2" loading='lazy' className="md:w-1/2 w-full rounded-lg flex-shrink-0" fetchpriority="high"/>
+                <img src="/porto/porto-3.webp" alt="porto-3" loading='lazy' className="md:w-1/2 w-full rounded-lg flex-shrink-0" fetchpriority="high"/>
+                <img src="/porto/porto-4.webp" alt="porto-4" loading='lazy' className="md:w-1/2 w-full rounded-lg flex-shrink-0" fetchpriority="high"/>
             </div>
         </div>
     )

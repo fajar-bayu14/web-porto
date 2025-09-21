@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import NavItem from './NavItem'
-import { ExternalLink, Mail, Menu, Phone, X } from 'lucide-react'
+import { Mail, Menu, Phone, X } from 'lucide-react'
 import Modal from '../Modal'
 const Navbar = () => {
 

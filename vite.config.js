@@ -15,5 +15,8 @@ export default defineConfig({
       webp: { quality: 75 }
     }),
   ],
-  base: process.env.VITE_BASE_PATH || "/"
+  base: process.env.VITE_BASE_PATH || "/",
+  build: {
+    sourcemap: true // aman, tidak pakai eval
+  }
 })

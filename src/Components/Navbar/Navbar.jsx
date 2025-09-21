@@ -8,13 +8,13 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     return (
         <>
-            <div className='flex justify-between align-middle px-10 py-4 bg-[#393E46] my-5 rounded-full' data-aos="fade-down">
+            <nav className='flex justify-between align-middle px-10 py-4 bg-[#393E46] my-5 rounded-full' data-aos="fade-down">
                 <a href="#" className='text-[#DFD0B8] text-xl font-bold'>Eastcode</a>
                 <div className='sm:flex hidden gap-7 text-[#DFD0B8]'>
                     <NavItem href="/" label="Home" />
                     <NavItem href="#about" label="About Me" />
                     <NavItem href="#porto" label="Porto" />
-                    <NavItem href="#contact" label="Contact" onClick={() => setIsOpen(true)} />
+                    <NavItem label="Contact" asButton onClick={() => setIsOpen(true)} />
                 </div>
                 <div className='flex sm:hidden cursor-pointer'>
                     {!open && (
@@ -24,7 +24,7 @@ const Navbar = () => {
                         <X className='text-[#DFD0B8]' onClick={() => setOpen(!open)} />
                     )}
                 </div>
-            </div>
+            </nav>
 
             {/* Dropdown */}
             {open && (
@@ -32,7 +32,7 @@ const Navbar = () => {
                     <NavItem href="/" label="Home" />
                     <NavItem href="#about" label="About Me" />
                     <NavItem href="#porto" label="Porto" />
-                    <NavItem href="#contact" label="Contact" onClick={() => setIsOpen(true)} />
+                    <NavItem label="Contact" asButton onClick={() => setIsOpen(true)} />
                 </div>
             )}
 

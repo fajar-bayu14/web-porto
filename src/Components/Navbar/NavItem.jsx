@@ -1,9 +1,15 @@
 import React from 'react'
 
-const NavItem = ({href, label, onClick}) => {
-    return (
-        <a href={href} onClick={onClick} className='font-semibold hover:underline'>{label}</a>
-    )
-}
+// Tambahkan prop asButton untuk kasus modal
+const NavItem = ({ href, label, onClick, asButton = false }) => {
+    return asButton ? (
+        <button onClick={onClick} className="font-semibold hover:underline" aria-haspopup="dialog">
+            {label}
+        </button>
+    ) : (
+        <a href={href} className="font-semibold hover:underline">{label}</a>
+    );
+};
+
 
 export default NavItem

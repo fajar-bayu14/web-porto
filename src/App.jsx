@@ -6,12 +6,19 @@ import 'aos/dist/aos.css';
 
 const App = () => {
 
+    // src/App.jsx
     useEffect(() => {
-        AOS.init({
-            duration: 1000,
-            once: true,
-        });
+        const run = async () => {
+            const [{ default: AOS }] = await Promise.all([
+                import('aos'),
+                new Promise(r => setTimeout(r, 0)) // yield frame
+            ]);
+            AOS.init({ duration: 1000, once: true });
+            await import('aos/dist/aos.css'); // catatan: CSS bisa diekstrak terpisah saat build
+        };
+        run();
     }, []);
+
 
 
     return (

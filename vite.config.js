@@ -9,9 +9,10 @@ export default defineConfig({
     react(),
     tailwindcss(),
     viteImagemin({
-      optipng: { optimizationLevel: 7 }, // compress PNG
-      pngquant: { quality: [0.6, 0.8] }, // quality range 60% - 80%
-      svgo: false, // skip SVG kalau ga perlu
+      optipng: { optimizationLevel: 7 },
+      pngquant: { quality: [0.6, 0.8] },
+      svgo: false,
+      webp: { quality: 75 }
     }),
   ],
   base: process.env.VITE_BASE_PATH || "/"

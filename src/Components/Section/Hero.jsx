@@ -18,7 +18,7 @@ const Hero = () => {
                 <p className='text-left font-light mb-5'>💻 Software Engineer | 🎨 Graphic Designer |🚀 Fast Learner </p>
 
                 <div className="flex gap-3">
-                    <button className='bg-[#222831] px-3 py-2 text-[#DFD0B8] rounded-lg font-semibold' onClick={() => setIsOpen(true)}>Contact Me</button>
+                    <button className='bg-[#222831] px-3 py-2 text-[#DFD0B8] rounded-lg font-semibold cursor-pointer' onClick={() => setIsOpen(true)}>Contact Me</button>
                     <button className='px-3 py-2 font-semibold border-2 rounded-lg border-[#222831] text-[#222831]'>Show Porto</button>
                 </div>
             </div>

@@ -22,5 +22,5 @@ Tujuan dari website ini adalah untuk memperkenalkan diri, menampilkan pengalaman
 ## 🛠️ Teknologi yang Digunakan
 
 * **Frontend**: HTML, CSS, TailwindCSS
-* **Framework/Library**: (jika ada, misalnya React/Vite atau Bootstrap – bisa ditambahkan)
+* **Framework/Library**: React + Vite
 * **Animation**: AOS (Animate On Scroll) untuk efek transisi smooth
